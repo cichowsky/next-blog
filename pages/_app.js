@@ -1,9 +1,11 @@
 import ThemeProvider from 'styles/ThemeProvider';
 
-export default function App({ Component, pageProps }) {
+const App = ({ Component, pageProps }) => {
   return (
     <ThemeProvider>
       <Component {...pageProps} />
     </ThemeProvider>
   );
-}
+};
+
+export default App;
