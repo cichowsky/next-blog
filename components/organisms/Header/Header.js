@@ -1,3 +1,4 @@
+import Nav from 'components/organisms/Nav/Nav';
 import { SWrapper, SInner } from './Header.styles';
 
 const Header = () => {
@@ -5,8 +6,7 @@ const Header = () => {
     <SWrapper>
       <SInner>
         {/* LOGO */}
-        {/* NAV */}
-        Header
+        <Nav />
       </SInner>
     </SWrapper>
   );
