@@ -1,7 +1,14 @@
+import { getAllProjects } from 'services/projects';
 import Head from 'next/head';
 import Template from 'components/templates/Template';
 
-const Portfolio = () => {
+export const getStaticProps = () => {
+  const projects = getAllProjects();
+
+  return { props: { projects } };
+};
+
+const Portfolio = ({ projects }) => {
   return (
     <Template>
       <Head>
@@ -10,7 +17,22 @@ const Portfolio = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <p>Portfolio</p>
+      <h1>Portfolio</h1>
+
+      {projects.map((project) => (
+        <div>
+          <hr />
+          <div>{project.cover}</div>
+          <h2>{project.title}</h2>
+          <p>{project.description}</p>
+          <p>{project.date}</p>
+          <ul>
+            {project.tags.map((tag) => (
+              <li>#{tag}</li>
+            ))}
+          </ul>
+        </div>
+      ))}
     </Template>
   );
 };
