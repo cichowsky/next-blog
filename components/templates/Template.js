@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import Header from 'components/organisms/Header/Header';
-import Footer from 'components/organisms/Footer/Footer';
+import Header from 'components/Header/Header';
+import Footer from 'components/Footer/Footer';
 
 const SWrapper = styled.div`
   padding-top: ${({ theme }) => theme.header.height};

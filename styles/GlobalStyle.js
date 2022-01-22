@@ -29,10 +29,15 @@ const GlobalStyle = createGlobalStyle`
   ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
   }
 
   li {
     display: inline-block;
+  }
+
+  h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
   }
 `;
 

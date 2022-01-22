@@ -1,6 +1,8 @@
 import { getAllProjects } from 'services/projects';
-import Head from 'next/head';
 import Template from 'components/templates/Template';
+import GridLayout from 'components/templates/GridLayout';
+import Head from 'next/head';
+import Card from 'components/Card/Card';
 
 export const getStaticProps = () => {
   const projects = getAllProjects();
@@ -18,21 +20,18 @@ const Portfolio = ({ projects }) => {
       </Head>
 
       <h1>Portfolio</h1>
-
-      {projects.map((project) => (
-        <div>
-          <hr />
-          <div>{project.cover}</div>
-          <h2>{project.title}</h2>
-          <p>{project.description}</p>
-          <p>{project.date}</p>
-          <ul>
-            {project.tags.map((tag) => (
-              <li>#{tag}</li>
-            ))}
-          </ul>
-        </div>
-      ))}
+      <GridLayout>
+        {projects.map((project) => (
+          <Card
+            key={project.slug}
+            title={project.title}
+            description={project.description}
+            tags={project.tags}
+            cover={project.cover}
+            date={project.date}
+          />
+        ))}
+      </GridLayout>
     </Template>
   );
 };
