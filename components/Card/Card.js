@@ -10,7 +10,7 @@ const Card = ({ title, description, tags, date, cover }) => {
         <h2>{title}</h2>
         <p>{description}</p>
         <SInfo>
-          <SDate>{date}</SDate>
+          <SDate>{new Date(date).toLocaleDateString()}</SDate>
           {tags && (
             <STagsList>
               {tags.map((tag) => (
@@ -30,7 +30,7 @@ Card.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   tags: PropTypes.arrayOf(PropTypes.string),
-  date: PropTypes.string,
+  date: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   cover: PropTypes.string,
 };
 

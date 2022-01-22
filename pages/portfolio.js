@@ -28,7 +28,7 @@ const Portfolio = ({ projects }) => {
             description={project.description}
             tags={project.tags}
             cover={project.cover}
-            date={project.date}
+            date={project.createdAt}
           />
         ))}
       </GridLayout>

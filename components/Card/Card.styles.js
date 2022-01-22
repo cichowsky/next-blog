@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import Image from 'next/image';
 
-export const SCard = styled.div`
+export const SCard = styled.article`
   display: flex;
   flex-direction: column;
   border-radius: 10px;
