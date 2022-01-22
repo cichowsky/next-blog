@@ -8,6 +8,7 @@ export const SWrapper = styled.header`
   height: ${({ theme }) => theme.header.height};
   background-color: ${({ theme }) => theme.header.background};
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  z-index: 50;
 `;
 
 export const SInner = styled.div`

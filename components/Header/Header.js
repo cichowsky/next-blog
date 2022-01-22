@@ -1,4 +1,4 @@
-import Nav from 'components/organisms/Nav/Nav';
+import Nav from 'components/Nav/Nav';
 import { SWrapper, SInner } from './Header.styles';
 
 const Header = () => {
