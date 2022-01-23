@@ -1,3 +1,13 @@
+# Next simple blog
+
+Live preview: https://next-blog-cichowsky.vercel.app/
+
+To add new article, user needs to add md file in `_data/articles` directory. Then markdown parser (graymatter and remark library) is processing files and transform them into a json.
+
+To update production deployment, user has to push changes to the "main" branch. It is simple solution for one person, who wants to have own portfolio or blog.
+
+---
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
