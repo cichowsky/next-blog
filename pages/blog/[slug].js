@@ -27,6 +27,10 @@ const Article = ({ article }) => {
         <title>{article.title}</title>
         <meta name="description" content="Article name" />
         <link rel="icon" href="/favicon.ico" />
+        <link
+          href="https://unpkg.com/prism-themes@1.6.0/themes/prism-vsc-dark-plus.css"
+          rel="stylesheet"
+        />
       </Head>
 
       <ArticleBody
