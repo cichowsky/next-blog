@@ -1,6 +1,8 @@
 import { getListOfArticles, getArticleBySlug } from 'services/articles';
+
 import Template from 'components/templates/Template';
 import Head from 'next/head';
+import ArticleBody from 'components/ArticleBody/ArticleBody';
 
 export const getStaticPaths = async () => {
   const articles = getListOfArticles();
@@ -27,10 +29,14 @@ const Article = ({ article }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div>
-        <h1>{article.title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: article.content }} />
-      </div>
+      <ArticleBody
+        title={article.title}
+        date={article.createdAt}
+        tags={article.tags}
+        description={article.description}
+        cover={article.cover}
+        content={article.content}
+      />
     </Template>
   );
 };
