@@ -38,7 +38,7 @@
     "react/prefer-stateless-function": 1,
     "react/state-in-constructor": 0,
     "react/require-default-props": 0,
-    "react/prop-types": 1,
+    "react/prop-types": 0,
     "react/function-component-definition": 0,
     "no-case-declarations": 0,
     "no-underscore-dangle": 0,

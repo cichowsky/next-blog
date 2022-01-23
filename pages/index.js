@@ -16,7 +16,7 @@ const Home = () => {
       <Introduction>
         <h2>Welcome to my blog!</h2>
         <p>
-          My name is <strong>John Doe</strong> and I'm here to help You!
+          My name is <strong>John Doe</strong> and I&apos;m here to help You!
         </p>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
