@@ -18,6 +18,10 @@ const SContent = styled.main`
   max-width: ${({ theme }) => theme.layout.siteWidth};
   padding: ${({ theme }) => theme.layout.padding};
   margin: 0 auto;
+
+  & > h2 {
+    font-size: 2rem;
+  }
 `;
 
 const Template = ({ children }) => {

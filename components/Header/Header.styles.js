@@ -17,5 +17,11 @@ export const SInner = styled.div`
   padding: 0 ${({ theme }) => theme.layout.padding};
   margin: 0 auto;
   display: flex;
+  justify-content: space-between;
   align-items: center;
+`;
+
+export const SLogo = styled.a`
+  font-weight: 700;
+  font-size: 1.25rem;
 `;

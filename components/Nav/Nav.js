@@ -3,9 +3,8 @@ import { useRouter } from 'next/router';
 import { SNavLink } from './Nav.styles';
 
 const navLinks = [
-  { path: '/', label: 'Home', id: 1 },
-  { path: '/portfolio', label: 'Portfolio', id: 2 },
-  { path: '/blog', label: 'Blog', id: 3 },
+  { path: '/portfolio', label: 'Portfolio', id: 1 },
+  { path: '/blog', label: 'Blog', id: 2 },
 ];
 
 const Nav = () => {

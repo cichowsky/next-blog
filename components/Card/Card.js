@@ -19,7 +19,7 @@ const Card = ({ path, title, description, tags, date, cover }) => {
         )}
         <p>{description}</p>
         <SInfo>
-          <SDate>{new Date(date).toLocaleDateString()}</SDate>
+          {date && <SDate>{new Date(date).toLocaleDateString()}</SDate>}
           {tags && (
             <STagsList>
               {tags.map((tag) => (

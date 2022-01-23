@@ -6,7 +6,7 @@ const ArticleBody = ({ title, date, tags, description, cover, content }) => {
   return (
     <SArticle>
       <SInfo>
-        <h1>{title}</h1>
+        <h2>{title}</h2>
         <span>{new Date(date).toLocaleDateString()}</span>
       </SInfo>
 

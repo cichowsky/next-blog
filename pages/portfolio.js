@@ -19,7 +19,7 @@ const Portfolio = ({ projects }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1>Portfolio</h1>
+      <h2>Portfolio</h2>
       <GridLayout>
         {projects.map((project) => (
           <Card

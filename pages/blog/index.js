@@ -19,7 +19,7 @@ const Blog = ({ articles }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1>Blog</h1>
+      <h2>Blog</h2>
       <GridLayout>
         {articles.map((article) => (
           <Card

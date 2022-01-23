@@ -1,11 +1,17 @@
 import Nav from 'components/Nav/Nav';
-import { SWrapper, SInner } from './Header.styles';
+import Link from 'next/link';
+import { SWrapper, SInner, SLogo } from './Header.styles';
 
 const Header = () => {
   return (
     <SWrapper>
       <SInner>
-        {/* LOGO */}
+        <Link href="/" passHref>
+          <a>
+            <SLogo>John Doe</SLogo>
+          </a>
+        </Link>
+
         <Nav />
       </SInner>
     </SWrapper>
